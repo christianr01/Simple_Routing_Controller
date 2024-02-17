@@ -20,6 +20,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/about-me', [AboutMeController::class, 'index']);
-Route::get('/skills', [SkillsController::class, 'index']);
-Route::get('/hobbies', [HobbiesController::class, 'index']);
+Route::get('/about', [AboutMeController::class, 'index'])->name('about');
+Route::get('/skills', [SkillsController::class, 'index'])->name('skills');
+Route::get('/hobbies', [HobbiesController::class, 'index'])->name('hobbies');
